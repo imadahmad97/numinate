@@ -125,7 +125,6 @@ p {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-left: 40px;
 }
 
 .button-37:hover {
