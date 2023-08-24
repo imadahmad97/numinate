@@ -138,6 +138,27 @@ p {
   transition: opacity 0.4s, transform 0.4s;
 }
 
+#doneText {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007BFF;
+  font-family: 'Arial';
+}
+#options button {
+  background-color: #007BFF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  border-radius: 4px;
+}
+#options button:hover {
+  background-color: #0056b3;
+}
+
 
 
 

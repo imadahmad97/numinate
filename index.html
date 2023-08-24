@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Numinate</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/dog.css">
     <script src="static/js/index.js"></script>
   </head>
   <body>
@@ -47,7 +46,7 @@
 
         <div class="content flex">
             <div class="container">
-                <button class="button-37" role="button">
+                <button class="button-37" role="button" onclick="toggleDisplay()">
                     Get Started!
                 </button>
                 <div class="box">
@@ -59,7 +58,12 @@
                     </div>
                     
                 </div>
-                <span id="doneText" style="display: none;">Done</span>
+                <span id="doneText" style="display: none;">What would you like to do with your data?</span>
+            <div id="options" style="display: none;">
+                <button>Make a Prediction</button>
+                <button>Make a Comparison</button>
+                <button>Option 3</button>
+            </div>
             </div>
         </div>
   </body>
