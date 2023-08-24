@@ -28,13 +28,17 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
       doneText.style.display = 'none';
       options.style.display = 'none';
-      dataFormQuestion.style.display = 'block';
-      dataFormQuestion.style.opacity = 0;
+      document.getElementById('dataFormQuestionText').style.display = 'block';  // Changed this line
+      document.getElementById('dataFormButtons').style.display = 'block';  // Changed this line
+      document.getElementById('dataFormQuestionText').style.opacity = 0;  // Changed this line
+      document.getElementById('dataFormButtons').style.opacity = 0;  // Changed this line
       setTimeout(() => {
-        dataFormQuestion.classList.add('fade-in');
+        document.getElementById('dataFormQuestionText').classList.add('fade-in');  // Changed this line
+        document.getElementById('dataFormButtons').classList.add('fade-in');  // Changed this line
       }, 10);
     }, 400);
   });
+  
 });
 
 
