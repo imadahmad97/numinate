@@ -138,13 +138,14 @@ p {
   transition: opacity 0.4s, transform 0.4s;
 }
 
-#doneText {
+.questionText {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #007BFF;
   font-family: 'Arial';
 }
+
 #options button {
   background-color: #007BFF;
   color: white;
