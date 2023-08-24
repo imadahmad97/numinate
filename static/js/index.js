@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   makeComparisonButton.addEventListener('click', function() {
+    options.classList.add('fade-out');
     doneText.classList.remove('fade-in');
     options.classList.remove('fade-in');
     doneText.style.opacity = 0;
