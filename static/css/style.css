@@ -106,8 +106,8 @@ p {
 
 .button-37 {
   z-index: 10;
-  background-color: #13aa52;
-  border: 1px solid #13aa52;
+  background-color: #007BFF;
+  border: 1px solid #007BFF;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
   box-sizing: border-box;
@@ -158,6 +158,27 @@ p {
 #options button:hover {
   background-color: #0056b3;
 }
+
+.fade-in {
+  opacity: 1 !important;
+  transition: opacity 400ms ease-in-out;
+}
+
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.fade {
+  transition: opacity 0.4s ease-in-out;
+}
+
 
 
 

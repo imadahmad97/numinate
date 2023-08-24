@@ -1,28 +1,40 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.querySelector('.button-37');
-    const doneText = document.getElementById('doneText');
+  const startButton = document.getElementById('startButton');
+  const doneText = document.getElementById('doneText');
+  const options = document.getElementById('options');
+  const makeComparisonButton = document.querySelector('#options button:nth-child(2)');
+  const dataFormQuestion = document.getElementById('dataFormQuestion');
 
-    btn.addEventListener('click', function() {
-        // Add the fade-out class to start the animation
-        btn.classList.add('fade-out');
-
-        // After the animation completes, hide the button and show the Done text
-        setTimeout(function() {
-            btn.style.display = 'none';
-            doneText.style.display = 'inline';
-        }, 400);  // 400ms is the duration of the transition
-    });
-});
-
-function toggleDisplay() {
-    const doneText = document.getElementById('doneText');
-    const options = document.getElementById('options');
-    
-    if (doneText.style.display === 'none') {
+  startButton.addEventListener('click', function() {
+    startButton.classList.add('fade-out');
+    setTimeout(() => {
+      startButton.style.display = 'none';
       doneText.style.display = 'block';
       options.style.display = 'block';
-    } else {
+      doneText.style.opacity = 0;
+      options.style.opacity = 0;
+      setTimeout(() => {
+        doneText.classList.add('fade-in');
+        options.classList.add('fade-in');
+      }, 10);
+    }, 400);
+  });
+
+  makeComparisonButton.addEventListener('click', function() {
+    doneText.classList.remove('fade-in');
+    options.classList.remove('fade-in');
+    doneText.style.opacity = 0;
+    options.style.opacity = 0;
+    setTimeout(() => {
       doneText.style.display = 'none';
       options.style.display = 'none';
-    }
-  }
+      dataFormQuestion.style.display = 'block';
+      dataFormQuestion.style.opacity = 0;
+      setTimeout(() => {
+        dataFormQuestion.classList.add('fade-in');
+      }, 10);
+    }, 400);
+  });
+});
+
+
