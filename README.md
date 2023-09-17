@@ -2,7 +2,7 @@
 
 Numinate is a platform to help any and all with their data needs!
 
-Our current offering is serving up dashboards hosted by us for small businesses. We focus on ensuring:
+Our current offering is building and hosting live dashboards for small businesses:
 
 * All of our dashboards are fully customized to our clients needs, all decided in a client meeting.
 * Our dashboards live update as you upload more data, just upload and refresh!
